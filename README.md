@@ -1,0 +1,106 @@
+# 🔗 Biolinks
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logoScale=20)
+[![Bob](https://github.com/rafaumeu/biolinks/actions/workflows/lint.yml/badge.svg)](https://github.com/rafaumeu/biolinks/actions/workflows/lint.yml)
+![PHP](https://img.shields.io/badge/php-8.2+-777BB4.svg?style=for-the-badge&logo=php&logoColor=white&logoScale=20)
+![Laravel](https://img.shields.io/badge/laravel-12.x-FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white&logoScale=20)
+
+**Biolinks** is a powerful, self-hosted implementation of a "link-in-bio" solution. Built with the latest Laravel technologies, it offers a robust platform for managing personal and professional links with a modern, high-performance architecture.
+
+## ✨ Features
+
+- **🔗 Link Management**: Create, edit, and reorganize your links with ease.
+- **🎨 Customization**: Modern UI built with TailwindCSS v4.
+- **⚡ High Performance**: Powered by Laravel 12 and Vite 7 for lightning-fast loads.
+- **🛡️ Robust Auth**: Secure user authentication and session management.
+- **📱 Mobile First**: Fully responsive design optimized for all devices.
+- **🧪 Quality Assured**: Comprehensive testing with Pest and static analysis with Pint.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **PHP 8.2+**
+- **Composer**
+- **Node.js & NPM**
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/rafaumeu/biolinks.git
+    cd biolinks
+    ```
+
+2.  **Environment Setup**:
+    Copy the example environment file and generate your encryption key:
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+3.  Install dependencies:
+    ```bash
+    composer install
+    npm install
+    ```
+
+4.  **Database & Migrations**:
+    Setup your database in `.env` and run migrations:
+    ```bash
+    php artisan migrate
+    ```
+
+5.  **Run Application**:
+    Start the development server:
+    ```bash
+    composer run dev
+    ```
+    Access at http://localhost:8000.
+
+## 🛠️ Tech Stack
+
+- **Framework**: Laravel 12.x
+- **Language**: PHP 8.2+
+- **Frontend**: Blade, TailwindCSS 4, Vite 7
+- **Testing**: Pest PHP
+- **Tooling**: Laravel Pint, Larastan
+
+## 📂 Project Structure
+
+```
+biolinks/
+├── app/                # Application Core Code
+│   ├── Http/           # Controllers & Middleware
+│   └── Models/         # Eloquent Models
+├── bootstrap/          # Framework Bootstrap
+├── config/             # Application Configuration
+├── database/           # Migrations & Factories
+├── public/             # Web Entry Point
+├── resources/          # Views & Assets (CSS/JS)
+├── routes/             # Web & API Routes
+├── storage/            # Logs & Compiled Blade Views
+├── tests/              # Pest Tests
+└── vendor/             # Composer Dependencies
+```
+
+## 🤝 Contributing
+
+We strictly follow the [**GitHub Flow**](CONTRIBUTING.md).
+
+1.  **Fork** the project.
+2.  Create your feature branch (`git checkout -b feature/amazing-feature`).
+3.  Commit your changes following **Conventional Commits** (`feat: add new theme support`).
+4.  Push to the branch.
+5.  Open a **Pull Request**.
+
+## 👨💻 Author
+
+<div align="center">
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/30784471?v=4" width="100px;" alt=""/>
+
+Made with 💜 by **[Rafael Dias Zendron](https://github.com/rafaumeu)**
+
+[![Linkedin Badge](https://img.shields.io/badge/-Rafael-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-dias-zendron/)](https://www.linkedin.com/in/rafael-dias-zendron/)
+[![Gmail Badge](https://img.shields.io/badge/-mmmarckos@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mmmarckos@gmail.com)](mailto:mmmarckos@gmail.com)
+</div>
