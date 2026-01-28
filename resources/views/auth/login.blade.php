@@ -3,7 +3,7 @@
     @if($mensagem = session()->get('mensagem'))
         <p>{{ $mensagem }}</p>
     @endif
-    <form action="/login" method="POST">
+    <form action="{{route('login')}}" method="POST">
         @csrf
         <div>
             <input name="email" type="email" placeholder="Email" value="{{ old('email') }}">
@@ -19,6 +19,6 @@
             @enderror
         </div>
         <br>
-        <button>Login</button>
+        <button>Registrar</button>
     </form>
 </div>
