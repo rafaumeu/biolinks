@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 
 /**
  * Handle login request
+ *
  * @property-read string $email
  * @property-read string $password
  */
@@ -29,17 +30,21 @@ class MakeLoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "email"=> ["required", "email"],
-            "password"=> ["required"]
+            'email' => ['required', 'email'],
+            'password' => ['required'],
         ];
     }
-    public function attempt(){
-      if ($user = User::query()->where("email", $this->email)->first()) {
+
+    public function attempt()
+    {
+        if ($user = User::query()->where('email', $this->email)->first()) {
             if (Hash::check($this->password, $user->password)) {
                 auth()->login($user);
+
                 return true;
             }
-        }   
+        }
+
         return false;
     }
 }
