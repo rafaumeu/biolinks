@@ -31,6 +31,44 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.0] - 2026-01-29
+
+## 🔐 Milestone: Authentication System (Phase 1)
+
+This release implements a complete, secure, and production-ready authentication system, marking the completion of Phase 1.
+
+## ✨ What's Included
+
+### 👤 User Management
+- ✅ **Login System**: Full login flow with "Remember Me" functionality.
+- ✅ **Registration**: New user registration with password hashing.
+- ✅ **Secure Logout**: Invokable controller ensuring session invalidation.
+- ✅ **Dashboard**: Protected dashboard route for authenticated users.
+
+### 🛡️ Security & Validation
+- ✅ **Form Requests**: Dedicated `LoginRequest` and `RegisterRequest` for robust validation.
+- ✅ **Middleware Protection**:
+  - `guest` middleware for Login/Register pages.
+  - `auth` middleware for Dashboard and Logout.
+- ✅ **Session Management**: Secure session handling and regeneration.
+- ✅ **Password Security**: Environment-based password default rules.
+
+### 🏗️ Architecture & Code Quality
+- ✅ **Invokable Controllers**: Modern single-action controllers (e.g., `LogoutController`).
+- ✅ **Route Organization**: Grouped routes in `web.php` for better maintainability.
+- ✅ **Type Safety**: Strictly typed requests and return types.
+
+## 🚀 Next Steps
+
+Phase 2 (v0.3) - Link Management:
+- [ ] Create Link Model & Migration
+- [ ] Implement Link CRUD Controllers
+- [ ] User-Link Relationships
+- [ ] Link Ordering System
+- [ ] Link Policies & Authorization
+
+---
+
 ## [0.1.0] - 2026-01-27
 
 ### Added
