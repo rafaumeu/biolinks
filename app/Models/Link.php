@@ -9,5 +9,6 @@ class Link extends Model
 {
     /** @use HasFactory<\Database\Factories\LinkFactory> */
     use HasFactory;
+
     protected $fillable = ['link', 'name'];
 }

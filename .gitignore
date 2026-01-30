@@ -56,4 +56,11 @@ project_status.md
 git_context.txt
 GEMINI.md
 /github_action_logs
-/COMMIT_SUMMARY.md
+
+# Ignore root markdown files (Agent artifacts)
+/*.md
+!/README.md
+!/SECURITY.md
+!/CHANGELOG.md
+!/CONTRIBUTING.md
+!/LICENSE.md
