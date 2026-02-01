@@ -43,6 +43,7 @@ class LinkController extends Controller
     public function update(UpdateLinkRequest $request, Link $link)
     {
         $link->fill($request->validated())->save();
+
         return to_route('dashboard')->with('message', 'Link atualizado com sucesso!');
     }
 
@@ -52,28 +53,21 @@ class LinkController extends Controller
     public function destroy(Link $link)
     {
         $link->delete();
+
         return to_route('dashboard')->with('message', 'Link deletado com sucesso!');
     }
+
     public function up(Link $link)
     {
-        $order = $link->sort;
-        $newOrder = $order - 1;
-        /** @var User $user */
-        $user = auth()->user();        
-        $swapWith = $user->links()->where('sort',  '=', $newOrder)->first();
-        $link->fill(['sort' => $newOrder])->save();
-        $swapWith->fill(['sort' => $order])->save();
+        $link->moveUp();
+
         return back();
     }
+
     public function down(Link $link)
     {
-        $order = $link->sort;
-        $newOrder = $order + 1;
-        /** @var User $user */
-        $user = auth()->user();
-        $swapWith = $user->links()->where('sort',  '=', $newOrder)->first();
-        $link->fill(['sort' => $newOrder])->save();
-        $swapWith->fill(['sort' => $order])->save();
+        $link->moveDown();
+
         return back();
     }
 }
