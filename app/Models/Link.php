@@ -22,26 +22,34 @@ class Link extends Model
 
     public function moveUp()
     {
-        $this->move(-1);
+        $previousLink = $this->user->links()
+            ->where('sort', '<', $this->sort)
+            ->orderBy('sort', 'desc')
+            ->first();
+
+        if ($previousLink) {
+            $this->swapSort($previousLink);
+        }
     }
 
     public function moveDown()
     {
-        $this->move(1);
+        $nextLink = $this->user->links()
+            ->where('sort', '>', $this->sort)
+            ->orderBy('sort', 'asc')
+            ->first();
+
+        if ($nextLink) {
+            $this->swapSort($nextLink);
+        }
     }
-    /**
-     * Function responsible for reordering the links
-     * @param int $to + 1 for down and -1 for up
-     * @return void
-     */
-    private function move($to)
+
+    private function swapSort(Link $otherLink)
     {
-        $order = $this->sort;
-        $newOrder = $order + $to;
-        /** @var User $user */
-        $user = $this->user;
-        $swapWith = $user->links()->where('sort', '=', $newOrder)->first();
-        $this->fill(['sort' => $newOrder])->save();
-        $swapWith->fill(['sort' => $order])->save();
+        $mySort = $this->sort;
+        $otherSort = $otherLink->sort;
+
+        $this->update(['sort' => $otherSort]);
+        $otherLink->update(['sort' => $mySort]);
     }
 }
