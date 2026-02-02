@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 🚀 Next Steps (Phase 5: Frontend & UI)
+- [ ] TailwindCSS & DaisyUI Installation & Config
+- [ ] Base Layout & Navigation System
+- [ ] Dashboard & Profile UI Components
+- [ ] Responsive Design Polish
+
+## [0.5.0] - 2026-02-02
+
+## 🌐 Milestone: Public Pages (Phase 4)
+
+This release implements public-facing bio-links pages, allowing visitors to view user profiles and their links without authentication.
+
+### ✨ What's Included
+- ✅ **Public Profiles**: Dynamic routes using `/{user:handler}`.
+- ✅ **Route Model Binding**: Automatic user resolution by handler.
+- ✅ **Public View**: Dedicated Blade view for displaying bio links.
+- ✅ **SEO-Friendly URLs**: Clean, handler-based profile URLs.
+
+### Added
+- `BiolinkController` for handling public profile requests.
+- Public bio-links route in `web.php`.
+- `resources/views/bio-links.blade.php` for the public profile theme.
+
+---
+
 ## [0.4.0] - 2026-02-02
 
 ## 👤 Milestone: User Profile (Phase 3)
@@ -47,12 +72,6 @@ This release introduces the core functionality of the platform: the ability for 
 - ✅ **Links Table**: Migration and Schema with Foreign Keys to Users.
 - ✅ **Factories & Seeders**: Test data generation for Links.
 
-## 🚀 Next Steps
-
-Phase 3 (v0.4) - User Profile:
-- [ ] Profile Update (Name, Bio, Handle)
-- [ ] Avatar Upload
-- [ ] Custom Username Validation
 
 ### Added
 - Initial project setup with Laravel 12
@@ -105,14 +124,6 @@ This release implements a complete, secure, and production-ready authentication 
 - ✅ **Route Organization**: Grouped routes in `web.php` for better maintainability.
 - ✅ **Type Safety**: Strictly typed requests and return types.
 
-## 🚀 Next Steps
-
-Phase 2 (v0.3) - Link Management:
-- [ ] Create Link Model & Migration
-- [ ] Implement Link CRUD Controllers
-- [ ] User-Link Relationships
-- [ ] Link Ordering System
-- [ ] Link Policies & Authorization
 
 ---
 
@@ -132,7 +143,8 @@ Phase 2 (v0.3) - Link Management:
 - Dependabot setup
 - Complete project documentation
 
-[Unreleased]: https://github.com/rafaumeu/biolinks/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/rafaumeu/biolinks/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/rafaumeu/biolinks/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/rafaumeu/biolinks/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/rafaumeu/biolinks/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/rafaumeu/biolinks/compare/v0.1.0...v0.2.0

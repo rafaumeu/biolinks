@@ -1,20 +1,21 @@
 # 🔗 Biolinks
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logoScale=20)
-[![Bob](https://github.com/rafaumeu/biolinks/actions/workflows/lint.yml/badge.svg)](https://github.com/rafaumeu/biolinks/actions/workflows/lint.yml)
+[![Lint](https://github.com/rafaumeu/biolinks/actions/workflows/lint.yml/badge.svg)](https://github.com/rafaumeu/biolinks/actions/workflows/lint.yml)
 ![PHP](https://img.shields.io/badge/php-8.2+-777BB4.svg?style=for-the-badge&logo=php&logoColor=white&logoScale=20)
 ![Laravel](https://img.shields.io/badge/laravel-12.x-FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white&logoScale=20)
 
-**Biolinks** is a powerful, self-hosted implementation of a "link-in-bio" solution. Built with the latest Laravel technologies, it offers a robust platform for managing personal and professional links with a modern, high-performance architecture.
+**Biolinks** is a powerful, professional "link-in-bio" platform. Built with Laravel 12, it provides a fast and SEO-optimized solution to consolidate your social media presence.
 
 ## ✨ Features
 
-- **🔗 Link Management**: Create, edit, and reorganize your links with ease.
-- **🎨 Customization**: Modern UI built with TailwindCSS v4.
-- **⚡ High Performance**: Powered by Laravel 12 and Vite 7 for lightning-fast loads.
-- **🛡️ Robust Auth**: Secure user authentication and session management.
-- **📱 Mobile First**: Fully responsive design optimized for all devices.
-- **🧪 Quality Assured**: Comprehensive testing with Pest and static analysis with Pint.
+- **🌐 Public Profile Pages**: Every user gets a dedicated public URL (e.g., `biolinks.com/handler`).
+- **👤 Profile Customization**: Update your name, bio, and upload custom avatars.
+- **🔗 Link Management**: Complete CRUD with intuitive link reordering.
+- **🎨 Modern UI**: Built with TailwindCSS v4 and DaisyUI components.
+- **⚡ High Performance**: Powered by Laravel 12 and Vite 7.
+- **🛡️ Security**: Secure authentication, middleware protection, and GPG signed commits.
+- **🧪 Quality Assured**: 100% type safety with PHPStan and robust testing with Pest.
 
 ## 🚀 Getting Started
 
