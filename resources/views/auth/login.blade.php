@@ -19,6 +19,6 @@
             @enderror
         </div>
         <br>
-        <button>Registrar</button>
+        <button>Entrar</button>
     </form>
 </div>

@@ -3,8 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
-class UpdateLinkRequest extends FormRequest
+class ProfileRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,8 +23,12 @@ class UpdateLinkRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'link' => ['required', 'url'],
-            'name' => ['required', 'string', 'min:3'],
+            'name' => ['required', 'min:3', 'max:30'],
+            'description' => ['nullable'],
+            'handler' => [
+                'required',
+                Rule::unique('users')->ignoreModel($this->user()),
+            ],
         ];
     }
 }
