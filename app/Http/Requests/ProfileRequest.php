@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace App\Http\Requests;
 
 use App\Rules\CheckHandler;
@@ -24,13 +26,13 @@ class ProfileRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['required', 'min:3', 'max:30'],
+            'name'        => ['required', 'min:3', 'max:30'],
             'description' => ['nullable'],
-            'photo' => ['nullable', 'image'],
-            'handler' => [
+            'photo'       => ['nullable', 'image'],
+            'handler'     => [
                 'required',
                 Rule::unique('users')->ignoreModel($this->user()),
-                new CheckHandler,
+                new CheckHandler(),
             ],
         ];
     }

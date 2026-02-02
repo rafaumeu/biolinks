@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileRequest;
@@ -24,6 +26,7 @@ class ProfileController extends Controller
     {
         $user = auth()->user();
         $data = $request->validated();
+
         if ($file = $request->photo) {
             $data['photo'] = $file->store('photos');
         }

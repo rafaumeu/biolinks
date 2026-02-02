@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -47,7 +49,7 @@ class Link extends Model
 
     private function swapSort(Link $otherLink)
     {
-        $mySort = $this->sort;
+        $mySort    = $this->sort;
         $otherSort = $otherLink->sort;
 
         $this->update(['sort' => $otherSort]);
