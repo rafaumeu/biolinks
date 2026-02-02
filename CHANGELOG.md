@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-02-01
+
+## 🔗 Milestone: Link Management (Phase 2)
+
+This release introduces the core functionality of the platform: the ability for users to manage their bio links.
+
+## ✨ What's Included
+
+### 🏗️ Core Features
+- ✅ **Link CRUD**: Complete system to Create, Read, Update, and Delete links.
+- ✅ **Link Ordering**: Ability to reorder links (Up/Down) for personalized prioritization.
+- ✅ **Dashboard Integration**: User dashboard now displays managed links.
+
+### 🛡️ Authorization & Security
+- ✅ **Link Policy**: Robust authorization logic (only owners can edit/delete their links).
+- ✅ **Validation**: Strict URL and name validation rules.
+
+### 💾 Database
+- ✅ **Links Table**: Migration and Schema with Foreign Keys to Users.
+- ✅ **Factories & Seeders**: Test data generation for Links.
+
+## 🚀 Next Steps
+
+Phase 3 (v0.4) - User Profile:
+- [ ] Profile Update (Name, Bio, Handle)
+- [ ] Avatar Upload
+- [ ] Custom Username Validation
+
 ### Added
 - Initial project setup with Laravel 12
 - Complete GitHub workflows (CI, Lint, Docker, Release)
