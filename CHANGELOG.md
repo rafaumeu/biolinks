@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-02-02
+
+## 👤 Milestone: User Profile (Phase 3)
+
+This release adds comprehensive user profile management, including avatar uploads and custom validation.
+
+### ✨ What's Included
+- ✅ **Profile Management**: Update name, bio, and unique handler.
+- ✅ **Avatar Upload**: Support for profile picture uploads with local storage.
+- ✅ **Custom Validation**: Robust validation for unique handlers and image constraints.
+- ✅ **Storage Configuration**: Symbolic link setup for public asset access.
+
+### Added
+- Image upload logic with storage handling.
+- Profile update form and controller methods.
+- Custom validation rules for profile fields.
+
+---
+
 ## [0.3.0] - 2026-02-01
 
 ## 🔗 Milestone: Link Management (Phase 2)
@@ -113,5 +132,8 @@ Phase 2 (v0.3) - Link Management:
 - Dependabot setup
 - Complete project documentation
 
-[Unreleased]: https://github.com/rafaumeu/biolinks/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/rafaumeu/biolinks/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/rafaumeu/biolinks/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/rafaumeu/biolinks/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/rafaumeu/biolinks/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/rafaumeu/biolinks/releases/tag/v0.1.0
