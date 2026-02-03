@@ -111,9 +111,9 @@
     - [x] Create main layout template
     - [x] Setup navigation (Base)
     - [x] Create core components (Layout, Container)
-- [ ] **Aula 23**: Blade Components
-    - [ ] Create Blade components
-    - [ ] Implement component-based architecture
+- [x] **Aula 23**: Blade Components
+    - [x] Create core components (Card, Form, Input, Button)
+    - [x] Implement component-based architecture (Auth Views refactored)
 - [ ] **Aula 24**: Profile UI Components
     - [ ] Create profile-specific components
     - [ ] Refactor profile views

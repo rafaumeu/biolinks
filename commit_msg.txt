@@ -1,0 +1,11 @@
+feat(ui): implement core blade components and template system
+
+- Install and configure blade-formatter with .bladeignore in pre-commit hook
+- Create layout.app, Container, Card, Form, Input and Button components
+- Refactor auth views (login, register) using new components
+- Implement smart route resolution in Form component
+- Fix layout background and several view typos
+- Update project tracking documentation (task.md, project_status.md)
+- Update .gitignore and add .bladeignore to better handle exclusions
+
+Closes #23, #24, #25, #26
