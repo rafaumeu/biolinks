@@ -87,8 +87,8 @@ Este documento rastreia o progresso das Fases e Milestones do projeto.
 - Template system with layouts (#24) ✅
 - Reusable Blade components (#25) ✅
 - Dashboard design (#27)
-- Profile UI components (#26)
-- Links Screen Refactor (#28)
+- Profile UI components (#26) ✅
+- Links Screen Refactor (#28) ✅
 - Responsive design (#43)
 
 ---

@@ -114,15 +114,15 @@
 - [x] **Aula 23**: Blade Components
     - [x] Create core components (Card, Form, Input, Button)
     - [x] Implement component-based architecture (Auth Views refactored)
-- [ ] **Aula 24**: Profile UI Components
-    - [ ] Create profile-specific components
-    - [ ] Refactor profile views
+- [x] **Aula 24**: Profile UI Components
+    - [x] Create profile-specific components
+    - [x] Refactor profile views
 - [ ] **Aula 25**: Dashboard Frontend
     - [ ] Design dashboard layout
     - [ ] Implement dashboard components
-- [ ] **Aula 26**: Links Screen Refactor
-    - [ ] Refactor links listing UI
-    - [ ] Apply final design polish
+- [x] **Aula 26**: Links Screen Refactor
+    - [x] Refactor links listing UI
+    - [x] Apply final design polish
 
 ---
 
