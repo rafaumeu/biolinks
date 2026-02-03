@@ -1,6 +1,6 @@
 <x-layout.app>
     <div>
-        <img src="/storage/{{ $user->photo }}" alt="Profile Picture of {{ $user->name }}">
+        <x-img src="/storage/{{ $user->photo }}" alt="Profile Picture of {{ $user->name }}" />
         <h2>User {{ $user->name }} :: {{ $user->id }}</h2>
         <h3>{{ $user->description }}</h3>
         <ul>

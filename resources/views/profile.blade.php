@@ -4,12 +4,7 @@
 
             <x-form :route="route('profile')" put id="register-form">
                 <div class="flex items-center gap-2">
-                    <div class="avatar">
-                        <div class="w-24 h-24 rounded-xl object-cover overflow-hidden">
-                            <img src="storage/{{ $user->photo }}" alt="Profile Picture of {{ $user->name }}">
-                        </div>
-
-                    </div>
+                    <x-img src="storage/{{ $user->photo }}" alt="Profile Picture of {{ $user->name }}" />
                     <x-file-input name="photo" />
                 </div>
                 <x-input name="name" type="text" placeholder="Name" value="{{ old('name', $user->name) }}" />
