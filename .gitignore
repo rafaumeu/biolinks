@@ -59,6 +59,7 @@ GEMINI.md
 
 # Ignore root markdown files (Agent artifacts)
 /*.md
+/*.txt
 !/README.md
 !/SECURITY.md
 !/CHANGELOG.md
