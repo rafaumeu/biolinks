@@ -1,38 +1,22 @@
-<div>
-    <h1>Profile</h1>
-    @if (session()->has('message'))
-        <div>{{ session('message') }}</div>
-    @endif
-    <form action="{{ route('profile') }}" method="POST" enctype="multipart/form-data">
-        @csrf
-        @method('PUT')
-        <div>
-            <img src="storage/{{ $user->photo }}" alt="Profile Picture of {{ $user->name }}">
-            <input type="file" name="photo" />
-        </div>
-        <div>
-            <input name="name" type="text" placeholder="Nome" value="{{ old('name', $user->name) }}">
-            @error('name')
-                <span>{{ $message }}</span>
-            @enderror
-        </div>
-        <br>
-        <div>
-            <textarea name="description" placeholder="Breve resumo">{{ old('description', $user->description) }}</textarea>
-            @error('description')
-                <span>{{ $message }}</span>
-            @enderror
-        </div>
-        <br>
-        <div>
-            <span>https://biolinks.com.br/</span>
-            <input name="handler" type="text" placeholder="@handle" value="{{ old('handler', $user->handler) }}">
-            @error('handler')
-                <span>{{ $message }}</span>
-            @enderror
-        </div>
-        <br>
-        <a href="{{ route('dashboard') }}">Cancelar</a>
-        <button>Atualizar</button>
-    </form>
-</div>
+<x-layout.app>
+    <x-container>
+        <x-card title="Profile">
+
+            <x-form :route="route('profile')" put id="register-form">
+                <div class="flex items-center gap-2">
+                    <x-img src="storage/{{ $user->photo }}" alt="Profile Picture of {{ $user->name }}" />
+                    <x-file-input name="photo" />
+                </div>
+                <x-input name="name" type="text" placeholder="Name" value="{{ old('name', $user->name) }}" />
+                <x-textarea name="description">{{ old('description', $user->description) }}
+                </x-textarea>
+                <x-input name="handler" prefix="biolinks.com.br/" type="text" placeholder="Handler"
+                    value="{{ old('handler', $user->handler) }}" />
+            </x-form>
+            <x-slot:actions>
+                <x-a href="{{ route('dashboard') }}">Cancel</x-a>
+                <x-button type="submit" form="register-form">Update Link</x-button>
+            </x-slot:actions>
+        </x-card>
+    </x-container>
+</x-layout.app>
