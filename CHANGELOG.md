@@ -5,30 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
-### 🚀 Next Steps (Phase 6: Testing & QA)
-- [ ] Unit Tests (Models & Policies)
-- [ ] Feature Tests (Auth & CRUD)
-- [ ] Browser Tests (End-to-End)
-- [ ] CI/CD Pipeline refinement
-
 ## [0.6.0] - 2026-02-03
 
-## 🎨 Milestone: Frontend & UI (Phase 5)
+## 🎨 Milestone: Frontend & UI Polish (Phase 5)
 
-This release overhauls the user interface with a modern design system using TailwindCSS and DaisyUI, implementing a component-based architecture.
+This release introduces a complete UI overhaul using TailwindCSS v4 and DaisyUI, replacing the raw HTML/CSS implementation with a modern, responsive, and component-based design system.
 
 ### ✨ What's Included
-- ✅ **Design System Integration**: TailwindCSS v4 + DaisyUI setup.
-- ✅ **Component Architecture**: Reusable Blade components for `x-button`, `x-card`, `x-input`, etc.
-- ✅ **Dashboard Polish**: Fully designed user dashboard with responsive layout.
-- ✅ **Icon System**: Modular SVG icons extracted into components.
+- ✅ **Modern Tech Stack**: Integration of TailwindCSS v4 (via Vite) and DaisyUI 5.
+- ✅ **Component Architecture**: Reusable Blade components for `Wrapper`, `Card`, `Button`, `Input`, `Form`, and `Icons`.
+- ✅ **Dashboard Polishing**: Redesigned dashboard with responsive grid, better spacing, and interactive elements.
+- ✅ **Profile UI**: Enhanced profile management screen with proper layout and feedback.
+- ✅ **Link Management UI**: Improved lists with iconography and clean actions (Edit, Move Up/Down, Delete).
+- ✅ **Routing Improvements**: Dashboard is now the home route (`/`) for authenticated users.
+
+### Added
+- `tailwincss` and `daisyui` npm packages.
+- Blade Components: `x-layout.app`, `x-container`, `x-card`, `x-button`, `x-input`, `x-textarea`, `x-file-input`, `x-img`.
+- Icon Components: `x-icons.arrow-up`, `x-icons.arrow-down`, `x-icons.trash`.
+- Recursive `resources/css/app.css` configuration for Tailwind v4.
 
 ### Changed
-- Refactored all views (`auth`, `dashboard`, `profile`, `link-management`) to use the new design system.
-- Moved Dashboard to root route `/` for authenticated users.
-- Replaced standard HTML buttons/inputs with Blade components.
+- Refactored all views (`auth`, `dashboard`, `profile`, `link-create/-edit`) to use new components.
+- Updated `dashboard.blade.php` to use `:href` binding and absolute positioning for actions.
+- Moved `dashboard` route to `/` (home) for better UX.
+
+### Fixed
+- Resolved Blade syntax errors caused by incorrect attribute interpolation.
+- Fixed `tailwind.config.js` conflicts by removing the file in favor of CSS-first config.
+- Corrected redirect expectations in Feature Tests.
 
 ## [0.5.0] - 2026-02-02
 
