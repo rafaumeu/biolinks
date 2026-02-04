@@ -7,11 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### 🚀 Next Steps (Phase 5: Frontend & UI)
-- [ ] TailwindCSS & DaisyUI Installation & Config
-- [ ] Base Layout & Navigation System
-- [ ] Dashboard & Profile UI Components
-- [ ] Responsive Design Polish
+### 🚀 Next Steps (Phase 6: Testing & QA)
+- [ ] Unit Tests (Models & Policies)
+- [ ] Feature Tests (Auth & CRUD)
+- [ ] Browser Tests (End-to-End)
+- [ ] CI/CD Pipeline refinement
+
+## [0.6.0] - 2026-02-03
+
+## 🎨 Milestone: Frontend & UI (Phase 5)
+
+This release overhauls the user interface with a modern design system using TailwindCSS and DaisyUI, implementing a component-based architecture.
+
+### ✨ What's Included
+- ✅ **Design System Integration**: TailwindCSS v4 + DaisyUI setup.
+- ✅ **Component Architecture**: Reusable Blade components for `x-button`, `x-card`, `x-input`, etc.
+- ✅ **Dashboard Polish**: Fully designed user dashboard with responsive layout.
+- ✅ **Icon System**: Modular SVG icons extracted into components.
+
+### Changed
+- Refactored all views (`auth`, `dashboard`, `profile`, `link-management`) to use the new design system.
+- Moved Dashboard to root route `/` for authenticated users.
+- Replaced standard HTML buttons/inputs with Blade components.
 
 ## [0.5.0] - 2026-02-02
 
