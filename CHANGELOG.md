@@ -54,6 +54,31 @@ This release implements public-facing bio-links pages, allowing visitors to view
 
 ---
 
+### 🚀 Next Steps (Phase 5: Frontend & UI)
+- [ ] TailwindCSS & DaisyUI Installation & Config
+- [ ] Base Layout & Navigation System
+- [ ] Dashboard & Profile UI Components
+- [ ] Responsive Design Polish
+
+## [0.5.0] - 2026-02-02
+
+## 🌐 Milestone: Public Pages (Phase 4)
+
+This release implements public-facing bio-links pages, allowing visitors to view user profiles and their links without authentication.
+
+### ✨ What's Included
+- ✅ **Public Profiles**: Dynamic routes using `/{user:handler}`.
+- ✅ **Route Model Binding**: Automatic user resolution by handler.
+- ✅ **Public View**: Dedicated Blade view for displaying bio links.
+- ✅ **SEO-Friendly URLs**: Clean, handler-based profile URLs.
+
+### Added
+- `BiolinkController` for handling public profile requests.
+- Public bio-links route in `web.php`.
+- `resources/views/bio-links.blade.php` for the public profile theme.
+
+---
+
 ## [0.4.0] - 2026-02-02
 
 ## 👤 Milestone: User Profile (Phase 3)
