@@ -5,6 +5,8 @@
 ![PHP](https://img.shields.io/badge/php-8.2+-777BB4.svg?style=for-the-badge&logo=php&logoColor=white&logoScale=20)
 ![Laravel](https://img.shields.io/badge/laravel-12.x-FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white&logoScale=20)
 
+**[Live Demo &#8594;](https://biolinks.rafaumeu.dev)**
+
 **Biolinks** is a powerful, professional "link-in-bio" platform. Built with Laravel 12, it provides a fast and SEO-optimized solution to consolidate your social media presence.
 
 ## ✨ Features
