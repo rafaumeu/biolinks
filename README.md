@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel) ![PHP 8](https://img.shields.io/badge/PHP_8-777BB4?style=for-the-badge&logo=php) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss) ![DaisyUI](https://img.shields.io/badge/DaisyUI-570DF8?style=for-the-badge) ![Pest](https://img.shields.io/badge/Pest-FF4F4F?style=for-the-badge) ![PHPStan](https://img.shields.io/badge/PHPStan-263238?style=for-the-badge)
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel"/> <img src="https://img.shields.io/badge/PHP_8-777BB4?style=for-the-badge&logo=php" alt="PHP 8"/> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss" alt="TailwindCSS"/> <img src="https://img.shields.io/badge/DaisyUI-570DF8?style=for-the-badge" alt="DaisyUI"/> <img src="https://img.shields.io/badge/Pest-FF4F4F?style=for-the-badge" alt="Pest"/> <img src="https://img.shields.io/badge/PHPStan-263238?style=for-the-badge" alt="PHPStan"/>
 </p>
 
 ## Overview
