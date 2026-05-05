@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF0080&height=180&section=header&text=Biolinks%20&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Link-in-Bio%20Platform%20with%20Laravel%2012&descSize=18&descAlignY=52"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFCA28&height=180&section=header&text=Biolinks%20&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Link-in-Bio%20Platform%20with%20Laravel%2012&descSize=18&descAlignY=52"/>
 </div>
 
 <p align="center">
@@ -46,6 +46,6 @@ php artisan serve
 MIT
 
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FF0080&height=100&section=footer"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=FFCA28&height=100&section=footer"/>
   <br/><sub>Built with ❤️ by <a href="https://github.com/rafaumeu">Rafael Zendron</a></sub>
 </div>
