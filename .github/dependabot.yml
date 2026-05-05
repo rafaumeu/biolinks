@@ -1,26 +1,22 @@
 version: 2
 updates:
-  - package-ecosystem: "composer"
-    directory: "/"
+  - package-ecosystem: npm
+    directory: /
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 10
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
     labels:
-      - "ci"
-      - "dependabot"
-  - package-ecosystem: "github-actions"
-    directory: "/"
+      - dependencies
+    commit-message:
+      prefix: chore
+      include: scope
+
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 10
+      interval: monthly
     labels:
-      - "ci"
-      - "dependencies"
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 10
-    labels:
-      - "ci"
-      - "dependencies"
+      - dependencies
+    commit-message:
+      prefix: ci
