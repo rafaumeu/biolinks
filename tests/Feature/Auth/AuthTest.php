@@ -1,16 +1,16 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 use App\Models\User;
 
 describe('Authentication', function () {
     it('can register a new user', function () {
         $response = $this->post(route('register'), [
-            'name' => 'John Doe',
-            'email' => 'john@example.com',
-            'email_confirmation' => 'john@example.com',
-            'password' => 'SecurePass1!',
+            'name'                  => 'John Doe',
+            'email'                 => 'john@example.com',
+            'email_confirmation'    => 'john@example.com',
+            'password'              => 'SecurePass1!',
             'password_confirmation' => 'SecurePass1!',
         ]);
 
@@ -20,12 +20,12 @@ describe('Authentication', function () {
 
     it('can login with valid credentials', function () {
         $user = User::factory()->create([
-            'email' => 'john@example.com',
+            'email'    => 'john@example.com',
             'password' => bcrypt('password'),
         ]);
 
         $response = $this->post(route('login'), [
-            'email' => 'john@example.com',
+            'email'    => 'john@example.com',
             'password' => 'password',
         ]);
 
@@ -35,12 +35,12 @@ describe('Authentication', function () {
 
     it('cannot login with invalid credentials', function () {
         User::factory()->create([
-            'email' => 'john@example.com',
+            'email'    => 'john@example.com',
             'password' => bcrypt('password'),
         ]);
 
         $response = $this->post(route('login'), [
-            'email' => 'john@example.com',
+            'email'    => 'john@example.com',
             'password' => 'wrong-password',
         ]);
 

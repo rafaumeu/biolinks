@@ -1,9 +1,9 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
-use App\Models\User;
 use App\Models\Link;
+use App\Models\User;
 
 describe('User Model', function () {
     it('can be created with factory', function () {
@@ -37,7 +37,7 @@ describe('User Model', function () {
     });
 
     it('casts email_verified_at to datetime and password to hashed', function () {
-        $user = new User();
+        $user  = new User();
         $casts = $user->casts();
 
         expect($casts)->toHaveKey('email_verified_at')

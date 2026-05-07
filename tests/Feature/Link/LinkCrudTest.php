@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 use App\Models\Link;
 use App\Models\User;
@@ -55,7 +55,7 @@ describe('Link CRUD', function () {
 
     it('cannot delete another users link', function () {
         $otherUser = User::factory()->create();
-        $link = Link::factory()->create(['user_id' => $otherUser->id]);
+        $link      = Link::factory()->create(['user_id' => $otherUser->id]);
 
         $this->actingAs($this->user)
             ->delete(route('links.destroy', $link))

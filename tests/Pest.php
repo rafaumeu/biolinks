@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 /*
 |--------------------------------------------------------------------------
@@ -46,10 +46,10 @@ expect()->extend('toBeOne', function () {
 function createUser(array $overrides = []): App\Models\User
 {
     return App\Models\User::factory()->create(array_merge([
-        'name' => 'Test User',
-        'email' => 'test@example.com',
+        'name'     => 'Test User',
+        'email'    => 'test@example.com',
         'password' => bcrypt('password'),
-        'handler' => 'testuser',
+        'handler'  => 'testuser',
     ], $overrides));
 }
 

@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 use App\Models\Link;
 use App\Models\User;
@@ -29,7 +29,7 @@ describe('Link Model', function () {
     });
 
     it('can move up', function () {
-        $user = User::factory()->create();
+        $user  = User::factory()->create();
         $linkA = Link::factory()->create(['user_id' => $user->id, 'sort' => 0]);
         $linkB = Link::factory()->create(['user_id' => $user->id, 'sort' => 1]);
 
@@ -42,7 +42,7 @@ describe('Link Model', function () {
     });
 
     it('can move down', function () {
-        $user = User::factory()->create();
+        $user  = User::factory()->create();
         $linkA = Link::factory()->create(['user_id' => $user->id, 'sort' => 0]);
         $linkB = Link::factory()->create(['user_id' => $user->id, 'sort' => 1]);
 

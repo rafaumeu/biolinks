@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 use App\Models\Link;
 use App\Models\User;
@@ -40,7 +40,7 @@ describe('Authenticated Routes', function () {
 
     it('cannot access edit page for another users link', function () {
         $otherUser = User::factory()->create();
-        $link = Link::factory()->create(['user_id' => $otherUser->id]);
+        $link      = Link::factory()->create(['user_id' => $otherUser->id]);
 
         $this->actingAs($this->user)
             ->get(route('links.edit', $link))
