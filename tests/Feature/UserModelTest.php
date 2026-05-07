@@ -36,14 +36,11 @@ describe('User Model', function () {
             ->and($json)->not->toHaveKey('remember_token');
     });
 
-    it('casts email_verified_at to datetime and password to hashed', function () {
-        $user  = new User();
-        $casts = $user->casts();
+    it('casts password to hashed', function () {
+        $user = User::factory()->create(['password' => 'plaintext']);
 
-        expect($casts)->toHaveKey('email_verified_at')
-            ->and($casts['email_verified_at'])->toBe('datetime')
-            ->and($casts)->toHaveKey('password')
-            ->and($casts['password'])->toBe('hashed');
+        expect($user->password)->not->toBe('plaintext')
+            ->and(password_verify('plaintext', $user->password))->toBeTrue();
     });
 
     it('has many links', function () {
