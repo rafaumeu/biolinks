@@ -59,7 +59,7 @@ jobs:
             }
           }
           PKJSON
-          cd .og-gen && npm install 2>/dev/null
+          cd .og-gen && npm install 2>/dev/null && cd ..
 
           # Generate the OG image using SVG + resvg (no satori dependency)
           node << 'SCRIPT'
