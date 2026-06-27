@@ -1,0 +1,13 @@
+{
+  "title": "BioLinks",
+  "subtitle": "Link-in-bio platform with analytics",
+  "accent": "#9B59B6",
+  "darkMode": true,
+  "emoji": "\ud83d\udd17",
+  "tags": [
+    "laravel",
+    "daisyui",
+    "analytics"
+  ],
+  "author": "Rafael Zendron"
+}
